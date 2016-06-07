@@ -11,10 +11,10 @@
 
 
 <!-- JROS FULLCALENDAR -->
-<link rel='stylesheet' href='/app/components/fullcalendar/dist/fullcalendar.css' />
-    <script src='/app/components/jquery/dist/jquery.min.js'></script>
-    <script src='/app/components/moment/min/moment.min.js'></script>
-    <script src='/app/components/fullcalendar/dist/fullcalendar.js'></script>
+<link rel='stylesheet' href='./app/components/fullcalendar/dist/fullcalendar.css' />
+    <script src='./app/components/jquery/dist/jquery.min.js'></script>
+    <script src='./app/components/moment/min/moment.min.js'></script>
+    <script src='./app/components/fullcalendar/dist/fullcalendar.js'></script>
 
     <!-- endbuild -->
 
@@ -32,7 +32,7 @@
                 },
                 events: function(start, end, timezone, callback) {
                     jQuery_2_2_4.ajax({
-                        url: '/events-feed-seminar.json',
+                        url: './events-feed-seminar.json',
                         dataType: 'json',
                         success: function(data) {
 
